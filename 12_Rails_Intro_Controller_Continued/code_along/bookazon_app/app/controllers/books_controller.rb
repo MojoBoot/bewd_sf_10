@@ -1,6 +1,5 @@
 class BooksController < ApplicationController
 
-  #READ: this will retrieve all books thru active_record
   def index
     @books = Book.all
   end
@@ -14,7 +13,11 @@ class BooksController < ApplicationController
   end
 
   def create
+<<<<<<< HEAD
     @book = Book.create(book_params)
+=======
+    @book = Book.new(book_params)
+>>>>>>> 15dea95a6fc1b5ac3a886a95ec2b6e6e681a600c
     if @book.save
       redirect_to book_path(@book)
     else
