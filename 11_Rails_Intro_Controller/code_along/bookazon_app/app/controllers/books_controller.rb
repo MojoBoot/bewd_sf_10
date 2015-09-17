@@ -12,6 +12,7 @@ class BooksController < ApplicationController
   end
 
   def new
+    
   end
 
   def create
@@ -29,6 +30,7 @@ class BooksController < ApplicationController
   private
 
   def book_params
+    params.require(:book).permit(:title, :year_published, :author, :available, :genre, :image_url)
   end
 <<<<<<< HEAD
 
