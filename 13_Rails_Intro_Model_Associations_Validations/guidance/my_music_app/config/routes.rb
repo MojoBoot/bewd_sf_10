@@ -1,10 +1,21 @@
 Rails.application.routes.draw do
+
+resources :artists
+
+  # get 'artists/index'
+  #
+  # get 'artists/show'
+  #
+  # get 'artists/new'
+  #
+  # get 'artists/edit'
+
   # get 'static_pages/home'
   #
   # get 'static_pages/about'
   #
   # get 'static_pages/test'
-  
+
   get 'about', to: "static_pages#about"
   get 'test', to: "static_pages#test", as: "test"
 
