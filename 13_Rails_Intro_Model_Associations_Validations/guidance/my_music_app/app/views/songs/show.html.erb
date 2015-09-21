@@ -1,0 +1,25 @@
+<h3 style="color:#666666;">Bit Beats Song Vault...</h3>
+
+<div class="row-fluid">
+    <div class="panel panel-default">
+      <!-- <div class="col-md-6">
+        <%=image_tag(@artist.image_url, class: "img-responsive thumbnail") %>
+      </div> -->
+
+      <div class="col-md-6">
+      <div class="panel panel-default">
+      <div class="panel-heading">
+        <h1> <%= @song.title%>
+          <%=link_to "All Songs", songs_path, class: 'btn btn-default btn-xs'%>
+        </h1>
+        <h1> <%=@song.artist %> </h1>
+      </div>
+
+      <div class="panel-body">
+        <h3> <%= @song.genre %> </h3>
+        <h5> <%= @song.length %> </h5>
+      </div>
+    </div>
+
+  </div>
+</div>

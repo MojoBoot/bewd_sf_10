@@ -17,8 +17,8 @@ class ArtistsController < ApplicationController
       redirect_to artists_path
     else
       render "new"
+    end
   end
-end
 
   def edit
     @artist = get_artist

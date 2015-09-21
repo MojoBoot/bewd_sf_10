@@ -1,0 +1,17 @@
+<div class="panel panel-default">
+<div class="panel-heading">
+  <h1> Bit Beats -- New Song </h1>
+</div>
+
+<div class="panel-body">
+<%= simple_form_for @song do |f| %>
+<%= f.input :title, label: false, as: :text, input_html: {placeholder: "Title"} %>
+<%= f.input :artist, label: false, as: :text, input_html: {placeholder: "Artist"} %>
+<%= f.input :genre, label: false, as: :text, input_html: {placeholder: "Musical Genre"} %>
+<%= f.input :length, label: false, as: :text, input_html: {placeholder: "Length"} %>
+<br>
+<%= f.submit "Submit".html_safe, class: "btn btn-default btn-danger" %>
+
+<% end %>
+</div>
+</div>
