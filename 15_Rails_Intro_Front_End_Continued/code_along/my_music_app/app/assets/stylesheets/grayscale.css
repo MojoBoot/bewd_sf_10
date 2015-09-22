@@ -147,7 +147,8 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+    /*background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;*/
+    background: url(http://img.cache.vevo.com/Content/VevoImages/video/84F44C0440E30F7372ACBBD60F4B2B80.jpg) no-repeat bottom center scroll;) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
