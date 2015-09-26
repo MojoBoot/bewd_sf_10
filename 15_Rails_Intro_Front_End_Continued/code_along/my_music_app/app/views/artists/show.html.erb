@@ -1,3 +1,4 @@
+<h3 style="color:#666666;">Bit Beats Artist Profile...</h3>
 <div class="row-fluid">
   <div class="panel panel-default">
   <div class="col-md-6">
@@ -12,10 +13,13 @@
       </div>
       <div class="panel-body">
         <p> <%= @artist.description %> </p>
+        <div class = "well">
+        <ul><% @songs.each do |song| %>
+         <li><%= song.title %> | <%= link_to "See lyrics", song.lyric_url, class: 'btn btn-danger btn-xs', target: '_blank' %></li>
+         </ul>
+        <% end %>
+      </div>
       </div>
     </div>
-
-
-
   </div>
 </div>

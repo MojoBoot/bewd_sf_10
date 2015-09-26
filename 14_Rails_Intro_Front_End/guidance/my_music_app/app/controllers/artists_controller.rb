@@ -5,6 +5,7 @@ class ArtistsController < ApplicationController
 
   def show
     @artist = get_artist
+    @songs = @artist.songs
   end
 
   def new
